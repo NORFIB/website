@@ -1,0 +1,183 @@
+﻿html {
+    height: 100%;
+} 
+body {
+    padding-top: 2em;
+    background-color: #fbfbfb; /*#ebebeb;*/
+    height:100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height:100%;
+	position:relative;
+}
+.dummyContent {
+    padding-bottom:100px; /* Height of the footer element */
+}
+
+.myfooter {
+    position: absolute;
+    width:100%;
+	height:100px;
+	bottom:0;
+	left:0;
+}
+
+.raw {
+    overflow: visible;
+}
+
+main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.navbar-nav {
+	float:right;
+}
+
+.verticalgap {
+    display: block;
+    height: 20px;
+}
+
+.navbar-brand > img {
+    position: relative;
+    vertical-align: text-top;
+    display: inline;
+    margin: -15px 10px 5px 0px;
+    height: 50px;
+    line-height: 35px;
+}
+
+.navbar-brand > strong {
+     text-shadow: 2px 2px 2px #999999;
+}
+
+footer {
+    position:relative;
+    vertical-align:bottom;
+    background: #efefef !important;
+    font-size: 11px;
+    margin-top:5px;
+    z-index:3;
+    color: black;
+}
+.mylogo {
+    padding-top: 1em;
+    padding-right: 10px;
+}
+
+.myfigures {
+    position: relative;
+    z-index: 0;
+}
+
+.images {
+    position: relative;
+    padding-top: 30px;
+}
+
+.imgsize {
+    max-width: 100%;
+}
+
+
+.jumbotron {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(254,254,254,0.85);
+    overflow: visible;
+    color: black;
+    padding: 2%;
+    margin-top: 30px;
+}
+ul { /* Just to remove defaults with dummy values*/
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.jumbotron p, ul {
+    font-size: 140%;
+    font-weight:380;
+    text-align: justify;
+}
+
+.jumbotron h1 {
+    font-weight:400;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 991px) {
+     
+    .jumbotron p {
+        font-size: 100%;
+        font-weight:400;
+    }
+    .jumbotron h1 {
+        font-weight:500;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .myxsfigures {
+        position:absolute;
+        z-index: -1;
+    }
+
+    .images {
+        position: relative;
+        z-index:-1;
+        opacity: 0.40;
+        margin-top:10%;
+        max-width:unset;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .myfigures {
+        padding-top: 50%;
+    }
+}
+
+.circlebutton {
+    position: relative;
+	display: block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+    font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: white; /*#999999;*/
+	line-height: 25px;
+	text-align: center;
+	background: #149c82; /*#121212;*/
+}
+
+.circlebutton:hover {
+    text-decoration: none;
+    color: #efefef;
+}
+
+.circlebutton:link {
+    text-decoration: none;
+}
+
+.circlebutton:active {
+    text-decoration: none;
+}
+
+.circlebutton:visited {
+    text-decoration: none;
+}
+.circlebutton:focus {
+    text-decoration: none;
+}
